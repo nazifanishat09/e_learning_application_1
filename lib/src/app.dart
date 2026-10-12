@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/src/pages/add_money.dart';
 import 'package:flutter_application_1/src/pages/profile_page.dart';
 
 class MyApp extends StatelessWidget {
@@ -6,6 +7,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: ProfilePage(),);
+    return MaterialApp(home: AddMoneyScreen(),);
   }
 }

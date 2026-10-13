@@ -7,11 +7,13 @@ class AddMoneyScreen extends StatefulWidget {
   State<AddMoneyScreen> createState() => _AddMoneyScreenState();
 }
 
-int selectedCardIndex = 0;
+
 
 class _AddMoneyScreenState extends State<AddMoneyScreen> {
   @override
   Widget build(BuildContext context) {
+
+    int selectedCardIndex = 0;
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
@@ -129,114 +131,7 @@ class _AddMoneyScreenState extends State<AddMoneyScreen> {
                                         return Colors.white;
                                       }),
 
-                                  value: selectedCardIndex == 0,
-                                  onChanged: (bool? value) {
-                                    setState(() {
-                                      selectedCardIndex = value! ? 1 : -1;
-                                    });
-                                  },
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-
-                  SizedBox(width: 10),
-                  Container(
-                    padding: EdgeInsets.all(4),
-
-                    width: 150,
-
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    child: Column(
-                      children: [
-                        ClipRRect(
-                          borderRadius: BorderRadius.circular(5),
-                          child: Stack(
-                            children: [
-                              Image.network(
-                                fit: BoxFit.cover,
-                                height: 120,
-                                width: 150,
-                                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe1kXSwCjy7BzHtIscymrVzKu74Noj61A0Me92fkvJGQ&s=10",
-                              ),
-
-                              Positioned(
-                                top: -8,
-                                right: -2,
-                                child: Checkbox(
-                                  fillColor:
-                                      WidgetStateProperty.resolveWith<Color>((
-                                        Set<WidgetState> states,
-                                      ) {
-                                        if (states.contains(
-                                          WidgetState.selected,
-                                        )) {
-                                          return Colors.black;
-                                        }
-                                        return Colors.white;
-                                      }),
-
-                                  value: isChecked,
-                                  onChanged: (bool? value) {
-                                    setState(() {
-                                      isChecked = value!;
-                                    });
-                                  },
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-
-                  SizedBox(width: 10),
-                  Container(
-                    padding: EdgeInsets.all(4),
-
-                    width: 150,
-
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    child: Column(
-                      children: [
-                        ClipRRect(
-                          borderRadius: BorderRadius.circular(5),
-                          child: Stack(
-                            children: [
-                              Image.network(
-                                fit: BoxFit.cover,
-                                height: 120,
-                                width: 150,
-                                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe1kXSwCjy7BzHtIscymrVzKu74Noj61A0Me92fkvJGQ&s=10",
-                              ),
-
-                              Positioned(
-                                top: -8,
-                                right: -2,
-                                child: Checkbox(
-                                  fillColor:
-                                      WidgetStateProperty.resolveWith<Color>((
-                                        Set<WidgetState> states,
-                                      ) {
-                                        if (states.contains(
-                                          WidgetState.selected,
-                                        )) {
-                                          return Colors.black;
-                                        }
-                                        return Colors.white;
-                                      }),
-
                                   value: selectedCardIndex == 1,
-
                                   onChanged: (bool? value) {
                                     setState(() {
                                       selectedCardIndex = value! ? 1 : -1;
@@ -289,11 +184,118 @@ class _AddMoneyScreenState extends State<AddMoneyScreen> {
                                         return Colors.white;
                                       }),
 
-                                  value: selectedCardIndex == 1,
+                                  value: selectedCardIndex == 2,
+                                  onChanged: (bool? value) {
+                                    setState(() {
+                                      selectedCardIndex = value! ? 2 : -1;
+                                    });
+                                  },
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+
+                  SizedBox(width: 10),
+                  Container(
+                    padding: EdgeInsets.all(4),
+
+                    width: 150,
+
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    child: Column(
+                      children: [
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(5),
+                          child: Stack(
+                            children: [
+                              Image.network(
+                                fit: BoxFit.cover,
+                                height: 120,
+                                width: 150,
+                                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe1kXSwCjy7BzHtIscymrVzKu74Noj61A0Me92fkvJGQ&s=10",
+                              ),
+
+                              Positioned(
+                                top: -8,
+                                right: -2,
+                                child: Checkbox(
+                                  fillColor:
+                                      WidgetStateProperty.resolveWith<Color>((
+                                        Set<WidgetState> states,
+                                      ) {
+                                        if (states.contains(
+                                          WidgetState.selected,
+                                        )) {
+                                          return Colors.black;
+                                        }
+                                        return Colors.white;
+                                      }),
+
+                                  value: selectedCardIndex == 3,
 
                                   onChanged: (bool? value) {
                                     setState(() {
-                                      selectedCardIndex = value! ? 1 : -1;
+                                      selectedCardIndex = value! ? 3 : -1;
+                                    });
+                                  },
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+
+                  SizedBox(width: 10),
+                  Container(
+                    padding: EdgeInsets.all(4),
+
+                    width: 150,
+
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    child: Column(
+                      children: [
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(5),
+                          child: Stack(
+                            children: [
+                              Image.network(
+                                fit: BoxFit.cover,
+                                height: 120,
+                                width: 150,
+                                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe1kXSwCjy7BzHtIscymrVzKu74Noj61A0Me92fkvJGQ&s=10",
+                              ),
+
+                              Positioned(
+                                top: -8,
+                                right: -2,
+                                child: Checkbox(
+                                  fillColor:
+                                      WidgetStateProperty.resolveWith<Color>((
+                                        Set<WidgetState> states,
+                                      ) {
+                                        if (states.contains(
+                                          WidgetState.selected,
+                                        )) {
+                                          return Colors.black;
+                                        }
+                                        return Colors.white;
+                                      }),
+
+                                  value: selectedCardIndex == 4,
+
+                                  onChanged: (bool? value) {
+                                    setState(() {
+                                      selectedCardIndex = value! ? 4 : -1;
                                     });
                                   },
                                 ),
